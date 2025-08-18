@@ -95,28 +95,111 @@ SkyFareCast is a **flight price prediction system** that predicts flight ticket 
 ---
 
 ## 📂 Project Structure
-
 SkyFareCast/
 │
 ├─ airflow/
-│ ├─ dags/
-│ │ ├─ ingestion_dag.py
-│ │ └─ prediction_dag.py
-│ └─ logs/
+│  ├─ dags/
+│  │  ├─ ingestion_dag.py
+│  │  └─ prediction_dag.py
+│  └─ logs/
 │
 ├─ predictions/
-│ └─ prediction_results.csv
+│  └─ prediction_results.csv
 │
 ├─ stats/
-│ └─ data_stats.csv
+│  └─ data_stats.csv
 │
 ├─ src/
-│ ├─ api/
-│ │ └─ main.py # FastAPI app
-│ ├─ app/
-│ │ └─ streamlit_app.py # Streamlit UI
-│ └─ utils/
-│ └─ preprocessing.py
+│  ├─ api/
+│  │  └─ main.py           # FastAPI app
+│  ├─ app/
+│  │  └─ streamlit_app.py  # Streamlit UI
+│  └─ utils/
+│     └─ preprocessing.py
 │
 ├─ requirements.txt
 └─ README.md
+
+---
+
+## 🚀 Getting Started
+
+### **1. Clone the repository**
+```bash
+git clone https://github.com/aswinroshanportfolio/SkyFareCast.git
+cd SkyFareCast
+```
+
+### **2. Set up Python environment**
+```bash
+python -m venv venv
+# Linux/Mac
+source venv/bin/activate  
+# Windows
+venv\Scripts\activate     
+pip install -r requirements.txt
+```
+
+### **3. Run FastAPI**
+```bash
+uvicorn src.api.main:app --reload
+
+```
+
+### **4. Run Streamlit**
+```bash
+streamlit run src.app.streamlit_app.py
+
+```
+
+### **5. Start Airflow**
+
+```bash
+airflow db init
+airflow webserver --port 8080
+airflow scheduler
+
+```
+
+### **6. Grafana**
+
+Configure Infinity Data Source.
+
+Import CSV files (prediction_results.csv, data_stats.csv).
+
+Create Pie Chart and Bar Chart panels.
+
+## **📊 CSV Data**
+
+predictions/prediction_results.csv: Contains flight prediction results with features.
+
+stats/data_stats.csv: Contains data quality metrics and high-alert counts.
+
+## **🏁 Conclusion**
+
+SkyFareCast demonstrates a complete end-to-end ML workflow including:
+
+Prediction API
+
+User-facing interface
+
+Scheduled data processing
+
+Monitoring and visualization
+
+It’s an excellent example of production-ready ML pipelines integrating Python, Airflow, FastAPI, Streamlit, PostgreSQL, and Grafana.
+
+## 🙋‍♂️ About Me
+
+**Aswin Roshan Rajendran**  
+🎓 Master's in Data Science & Analytics, **EPITA**, Paris  
+📍 Paris, France  
+📫 [aswinroshan17@gmail.com](mailto:aswinroshan17@gmail.com)
+
+---
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
