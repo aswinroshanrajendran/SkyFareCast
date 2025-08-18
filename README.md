@@ -38,16 +38,32 @@ SkyFareCast is a **flight price prediction system** that predicts flight ticket 
 - End-to-end pipeline for **data ingestion, validation, prediction, and monitoring**
 
 ---
-
 ## 📸 Demo Screenshots
 
-| Streamlit App | FastAPI Predictions | Airflow DAGs |
-|---------------|------------------|--------------|
-| ![Streamlit](images/streamlit_app.png) | ![FastAPI](images/fastapi_prediction.png) | ![Airflow](images/airflow_dags.png) |
+### Streamlit App
+| Streamlit UI 1 | Streamlit UI 2 | Streamlit UI 3 |
+|----------------|----------------|----------------|
+| ![Streamlit 1](https://github.com/aswinroshanrajendran/SkyFareCast/blob/main/images/streamlit%20-1.png) | ![Streamlit 2](https://github.com/aswinroshanrajendran/SkyFareCast/blob/main/images/streamlit%20-%202.png) | ![Streamlit 3](https://github.com/aswinroshanrajendran/SkyFareCast/blob/main/images/streamlit%20-%203.png) |
 
-| Grafana – Pie Chart | Grafana – Bar Chart |
-|--------------------|-------------------|
-| ![Pie Chart](images/grafana_pie.png) | ![Bar Chart](images/grafana_bar.png) |
+### FastAPI Predictions
+| FastAPI Prediction |
+|------------------|
+| ![FastAPI](https://github.com/aswinroshanrajendran/SkyFareCast/blob/main/images/Fast%20api%20-%201.png) |
+
+### Airflow DAGs
+| Data Ingestion DAG | Prediction DAG |
+|------------------|----------------|
+| ![Airflow Ingestion](https://github.com/aswinroshanrajendran/SkyFareCast/blob/main/images/Airflow%20-%201.png) | ![Airflow Prediction](https://github.com/aswinroshanrajendran/SkyFareCast/blob/main/images/Airflow%20-%202.png) |
+
+### PostgreSQL Database (Predictions Storage)
+| Database Screenshot 1 | Database Screenshot 2 |
+|----------------------|----------------------|
+| ![Postgres 1](https://github.com/aswinroshanrajendran/SkyFareCast/blob/main/images/pg%20-%201.png) | ![Postgres 2](https://github.com/aswinroshanrajendran/SkyFareCast/blob/main/images/pg%20-%202.png) |
+
+### Grafana Dashboards
+| Pie Chart | Bar Chart |
+|-----------|-----------|
+| ![Grafana Pie](https://github.com/aswinroshanrajendran/SkyFareCast/blob/main/images/grafana%20-%201.png) | ![Grafana Bar](https://github.com/aswinroshanrajendran/SkyFareCast/blob/main/images/grafana%20-%201.png) |
 
 ---
 
