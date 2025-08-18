@@ -96,3 +96,27 @@ SkyFareCast is a **flight price prediction system** that predicts flight ticket 
 
 ## 📂 Project Structure
 
+SkyFareCast/
+│
+├─ airflow/
+│ ├─ dags/
+│ │ ├─ ingestion_dag.py
+│ │ └─ prediction_dag.py
+│ └─ logs/
+│
+├─ predictions/
+│ └─ prediction_results.csv
+│
+├─ stats/
+│ └─ data_stats.csv
+│
+├─ src/
+│ ├─ api/
+│ │ └─ main.py # FastAPI app
+│ ├─ app/
+│ │ └─ streamlit_app.py # Streamlit UI
+│ └─ utils/
+│ └─ preprocessing.py
+│
+├─ requirements.txt
+└─ README.md
